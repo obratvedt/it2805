@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+
+	<movie>
+		<title>Fight Club</title>
+		<year>1999</year>
+		<category>Drama</category>
+		<director>David Fincher</director>
+		<description>An insomniac office worker looking
+		 for a way to change his life crosses paths with
+		  a devil-may-care soap maker and they form an underground
+		   fight club that evolves into something much, much more...</description>
+	</movie>
+	<movie>
+		<title>The Shawshank Redemption</title>
+		<year>1994</year>
+		<category>Drama</category>
+		<director>Frank Darabont</director>
+		<description>Two imprisoned men bond over a number of years, 
+			finding solace and eventual redemption through acts of common decency.</description>
+	</movie>
+	<movie>
+		<title>Pulp Fiction</title>
+		<year>1994</year>
+		<category>Drama</category>
+		<director>Quentin Tarantino</director>
+		<description>The lives of two mob hit men, a boxer,
+		 a gangster's wife, and a pair of diner bandits intertwine
+		  in four tales of violence and redemption.</description>
+	</movie>
+	<movie>
+		<title>The Good, the Bad and the Ugly</title>
+		<year>1966</year>
+		<category>Western</category>
+		<director>Sergio Leone</director>
+		<description>A bounty hunting scam joins two men in an uneasy
+		 alliance against a third in a race to find a fortune in gold buried in a remote cemetery.</description>
+	</movie>
+	<movie>
+		<title>Godfather</title>
+		<year>1972</year>
+		<category>Drama</category>
+		<director>Francic Ford Coppola</director>
+		<description>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</description>
+	</movie>
+	<movie>
+		<title>The Dark Knight</title>
+		<year>2008</year>
+		<category>Action</category>
+		<director>Christopher Nolan</director>
+		<description>When the menace known as the Joker wreaks havoc
+		 and chaos on the people of Gotham, the caped crusader must come to terms
+		  with one of the greatest psychological tests of his ability to fight injustice.</description>
+	</movie>
+	<movie>
+		<title>Schindler's List</title>
+		<year>1993</year>
+		<category>Biography</category>
+		<director>Steven Spielberg</director>
+		<description>In Poland during World War II, Oskar Schindler gradually becomes
+		 concerned for his Jewish workforce after witnessing their persecution by the Nazis.</description>
+	</movie>
+	<movie>
+		<title>The Lord of the Rings: The Return of the King</title>
+		<year>2003</year>
+		<category>Adventure</category>
+		<director>Peter Jackson</director>
+		<description>Gandalf and Aragorn lead the World of Men against Sauron's army to
+		 draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</description>
+	</movie>
+	<movie>
+		<title>Star Wars: Episode V - The Empire Strikes Back</title>
+		<year>1980</year>
+		<category>Action</category>
+		<director>Irvin Kershner</director>
+		<description>After the rebels have been brutally overpowered by the Empire on their newly
+		 established base, Luke Skywalker takes advanced Jedi training with Master Yoda, while his
+		  friends are pursued by Darth Vader as part of his plan to capture Luke.</description>
+	</movie>
+	<movie>
+		<title>Inception</title>
+		<year>20110</year>
+		<category>Action</category>
+		<director>Christopher Nolan</director>
+		<description>A thief who steals corporate secrets through use of dream-sharing technology
+		 is given the inverse task of planting an idea into the mind of a CEO.</description>
+	</movie>
+	<movie>
+		<title>Forrest Gump</title>
+		<year>1994</year>
+		<category>Drama</category>
+		<director>Robert Zemeckis</director>
+		<description>A man's life, full of ethical values and the powers of life and love. 
+			His simple intelligents progreses as Forrest Gump learns the ways though his mother,
+			 friends, and his true love, Jenny.</description>
+	</movie>
+	<movie>
+		<title>The Matrix</title>
+		<year>1999</year>
+		<category>Action</category>
+		<director>The Wachowski Brothers</director>
+		<description>A computer hacker learns from mysterious rebels about the true nature of his
+		 reality and his role in the war against its controllers.</description>
+	</movie>
+	<movie>
+		<title>City of God</title>
+		<year>2002</year>
+		<category>Drama</category>
+		<director>Fernando Meirelles and Kátia Lund</director>
+		<description>Two boys growing up in a violent neighborhood of Rio de Janeiro take different
+		 paths: one becomes a photographer, the other a drug dealer.</description>
+	</movie>
+	<movie>
+		<title>American History X</title>
+		<year>1998</year>
+		<category>Drama</category>
+		<director>Tony Kaye</director>
+		<description>A former neo-nazi skinhead tries to prevent his younger brother from going down
+		 the same wrong path that he did.</description>
+	</movie>
+	<movie>
+		<title>Psycho</title>
+		<year>1960</year>
+		<category>Horror</category>
+		<director>Alfred Hitchcock</director>
+		<description>A Phoenix secretary steals $40,000 from her employer's client, goes on the run and
+		 checks into a remote motel run by a young man under the domination of his mother.</description>
+	</movie>
+	<movie>
+		<title>Saving Private Ryan</title>
+		<year>1998</year>
+		<category>Action</category>
+		<director>Steven Spielberg</director>
+		<description>Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to 
+		retrieve a paratrooper whose brothers have been killed in action.</description>
+	</movie>
+
+</movies>
