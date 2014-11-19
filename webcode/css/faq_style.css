@@ -1,0 +1,24 @@
+
+details{
+    font-size: larger;
+}
+
+details p{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: small;
+    padding-top: 0px;
+    margin-top: 5px;
+}
+
+details summary{
+    font-weight: normal;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: larger;
+}
+
