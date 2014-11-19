@@ -36,7 +36,6 @@
                         
                         var x=xmlDoc.getElementsByTagName("movie");
                         var counter = 0;
-                        var rowcounter = 0;
                         var itemcounter = 0;
                         
                         for (t=0;t<x.length/4;t++)
@@ -54,7 +53,7 @@
                                   var cell = row.insertCell();
                                   var cell2 = row2.insertCell();
                                   cell.innerHTML = "<img src='" + image + "' alt='Movie poster' />";
-                                  cell2.innerHTML = "<a href=''>" + title + "(" + category + ")" + "</a>";
+                                  cell2.innerHTML = "<a href=''>" + title + " (" + category + ")" + "</a>";
                                   itemcounter++;
                               }
                           

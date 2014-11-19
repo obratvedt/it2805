@@ -112,7 +112,15 @@ nav ul li:hover {
 #main_movies table tbody tr td {
     width: 318px;
     text-align: center;
+}
+
+#main_movies table tbody tr td a {
     color: #5B90F6;
+    text-decoration: none;
+}
+
+#main_movies table tbody tr td a:hover {
+    color: #27408B;
 }
 
 #movie_header {
