@@ -92,6 +92,7 @@ p, .welcome {
     border-radius: 15px;
     
     box-shadow: 8px 8px 5px #888888;
+    //box-shadow: 0 5px 2px -2px darkgray;
 }
 
 #main_movies {

@@ -8,7 +8,9 @@ details p{
     padding-top: 10px;
     font-size: small;
     padding-top: 0px;
+    padding-bottom: 0px;
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 details summary{
@@ -16,7 +18,7 @@ details summary{
     outline: none;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 80%;
     text-align: center;
     padding-top: 30px;
     font-size: larger;
