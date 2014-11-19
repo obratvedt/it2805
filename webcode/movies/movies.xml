@@ -2,6 +2,7 @@
 <movies>
 
 	<movie>
+                <image>http://ia.media-imdb.com/images/M/MV5BMjIwNTYzMzE1M15BMl5BanBnXkFtZTcwOTE5Mzg3OA@@._V1_SX214_AL_.jpg</image>
 		<title>Fight Club</title>
 		<year>1999</year>
 		<category>Drama</category>
@@ -12,6 +13,7 @@
 		   fight club that evolves into something much, much more...</description>
 	</movie>
 	<movie>
+                <image>http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX214_AL_.jpg</image>
 		<title>The Shawshank Redemption</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -44,6 +46,7 @@
 		<description>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</description>
 	</movie>
 	<movie>
+                <image>http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY317_CR0,0,214,317_AL_.jpg</image>
 		<title>The Dark Knight</title>
 		<year>2008</year>
 		<category>Action</category>
@@ -103,6 +106,7 @@
 		 reality and his role in the war against its controllers.</description>
 	</movie>
 	<movie>
+                
 		<title>City of God</title>
 		<year>2002</year>
 		<category>Drama</category>
@@ -127,6 +131,7 @@
 		 checks into a remote motel run by a young man under the domination of his mother.</description>
 	</movie>
 	<movie>
+                <image>http://ia.media-imdb.com/images/M/MV5BNjczODkxNTAxN15BMl5BanBnXkFtZTcwMTcwNjUxMw@@._V1_SY317_CR9,0,214,317_AL_.jpg</image>
 		<title>Saving Private Ryan</title>
 		<year>1998</year>
 		<category>Action</category>

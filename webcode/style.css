@@ -5,12 +5,12 @@ body {
 }
 
 header {
-    width: 100px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Sans-serif", "Helvetica";
     font-size: 40px;
     color: #5B90F6;
+    text-align: center;
 }
 
 nav {
@@ -58,7 +58,7 @@ nav ul li:hover {
     font-weight: bold;
 }
 
-p, h1, h2 {
+p, .welcome {
     font-family: "Sans-serif", "Helvetica";
     width: 600px;
     margin-left: auto;
@@ -71,7 +71,7 @@ p, h1, h2 {
     font-size: 25px;
 }
 
-h1, h2 {
+.welcome {
     margin-top: 60px;
 }
 
@@ -92,4 +92,43 @@ h1, h2 {
     border-radius: 15px;
     
     box-shadow: 8px 8px 5px #888888;
+}
+
+#main_movies {
+    height: 1500px;
+    width: 1000px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FAFAFA;
+    border: solid;
+    border-color: #FAFAFA;
+    border-radius: 15px;
+    
+    box-shadow: 8px 8px 5px #888888;
+}
+
+#movie_header {
+    font-family: "Sans-serif", "Helvetica";
+    text-align: center;
+    color:#5B90F6;
+}
+
+#main_movies hr {
+    width: 650px;
+    
+}
+
+#the_movies {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#the_movies tr {
+    display: block;
+
+}
+
+#the_movies .not_last {
+    border-bottom: 1px solid #A3A3A3;
 }
