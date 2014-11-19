@@ -41,19 +41,20 @@
                         
                         for (t=0;t<x.length/4;t++)
                           { 
-                              var row = the_table.insertRow(t);
-                              if (t < x.length/4-1)row.className = "not_last";
+                              var row = the_table.insertRow();
+                              var row2 = the_table.insertRow()
+                              if (t < x.length/4-1)row2.className = "not_last";
                               
                               
                               for (i=0;i<4;i++) {
                                   
                                   var image = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
-                                  var year = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
-                                  var category = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
-                                  var director = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
-                                  var description = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
+                                  var title = x[itemcounter].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                                  var category = x[itemcounter].getElementsByTagName("category")[0].childNodes[0].nodeValue;
                                   var cell = row.insertCell();
+                                  var cell2 = row2.insertCell();
                                   cell.innerHTML = "<img src='" + image + "' alt='Movie poster' />";
+                                  cell2.innerHTML = "<a href=''>" + title + "(" + category + ")" + "</a>";
                                   itemcounter++;
                               }
                           

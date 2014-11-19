@@ -58,7 +58,7 @@ nav ul li:hover {
     font-weight: bold;
 }
 
-p, .welcome {
+#main p, .welcome {
     font-family: "Sans-serif", "Helvetica";
     width: 600px;
     margin-left: auto;
@@ -96,7 +96,7 @@ p, .welcome {
 }
 
 #main_movies {
-    height: 1600px;
+    height: 2000px;
     width: 1000px;
     margin-top: 80px;
     margin-left: auto;
@@ -107,6 +107,12 @@ p, .welcome {
     border-radius: 15px;
     
     box-shadow: 8px 8px 5px #888888;
+}
+
+#main_movies table tbody tr td {
+    width: 318px;
+    text-align: center;
+    color: #5B90F6;
 }
 
 #movie_header {
