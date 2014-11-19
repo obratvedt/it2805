@@ -2,7 +2,7 @@
 <movies>
 
 	<movie>
-                <image>http://ia.media-imdb.com/images/M/MV5BMjIwNTYzMzE1M15BMl5BanBnXkFtZTcwOTE5Mzg3OA@@._V1_SX214_AL_.jpg</image>
+                <image>images/fightclub.jpg</image>
 		<title>Fight Club</title>
 		<year>1999</year>
 		<category>Drama</category>
@@ -13,7 +13,7 @@
 		   fight club that evolves into something much, much more...</description>
 	</movie>
 	<movie>
-                <image>http://ia.media-imdb.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX214_AL_.jpg</image>
+                <image>images/fightclub.jpg</image>
 		<title>The Shawshank Redemption</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -22,6 +22,7 @@
 			finding solace and eventual redemption through acts of common decency.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Pulp Fiction</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -31,6 +32,7 @@
 		  in four tales of violence and redemption.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>The Good, the Bad and the Ugly</title>
 		<year>1966</year>
 		<category>Western</category>
@@ -39,6 +41,7 @@
 		 alliance against a third in a race to find a fortune in gold buried in a remote cemetery.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Godfather</title>
 		<year>1972</year>
 		<category>Drama</category>
@@ -46,7 +49,7 @@
 		<description>The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</description>
 	</movie>
 	<movie>
-                <image>http://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SY317_CR0,0,214,317_AL_.jpg</image>
+                <image>images/fightclub.jpg</image>
 		<title>The Dark Knight</title>
 		<year>2008</year>
 		<category>Action</category>
@@ -56,6 +59,7 @@
 		  with one of the greatest psychological tests of his ability to fight injustice.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Schindler's List</title>
 		<year>1993</year>
 		<category>Biography</category>
@@ -64,6 +68,7 @@
 		 concerned for his Jewish workforce after witnessing their persecution by the Nazis.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>The Lord of the Rings: The Return of the King</title>
 		<year>2003</year>
 		<category>Adventure</category>
@@ -72,6 +77,7 @@
 		 draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Star Wars: Episode V - The Empire Strikes Back</title>
 		<year>1980</year>
 		<category>Action</category>
@@ -81,6 +87,7 @@
 		  friends are pursued by Darth Vader as part of his plan to capture Luke.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Inception</title>
 		<year>20110</year>
 		<category>Action</category>
@@ -89,6 +96,7 @@
 		 is given the inverse task of planting an idea into the mind of a CEO.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Forrest Gump</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -98,6 +106,7 @@
 			 friends, and his true love, Jenny.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>The Matrix</title>
 		<year>1999</year>
 		<category>Action</category>
@@ -106,7 +115,7 @@
 		 reality and his role in the war against its controllers.</description>
 	</movie>
 	<movie>
-                
+                <image>images/fightclub.jpg</image>
 		<title>City of God</title>
 		<year>2002</year>
 		<category>Drama</category>
@@ -115,6 +124,7 @@
 		 paths: one becomes a photographer, the other a drug dealer.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>American History X</title>
 		<year>1998</year>
 		<category>Drama</category>
@@ -123,6 +133,7 @@
 		 the same wrong path that he did.</description>
 	</movie>
 	<movie>
+                <image>images/fightclub.jpg</image>
 		<title>Psycho</title>
 		<year>1960</year>
 		<category>Horror</category>
@@ -131,7 +142,7 @@
 		 checks into a remote motel run by a young man under the domination of his mother.</description>
 	</movie>
 	<movie>
-                <image>http://ia.media-imdb.com/images/M/MV5BNjczODkxNTAxN15BMl5BanBnXkFtZTcwMTcwNjUxMw@@._V1_SY317_CR9,0,214,317_AL_.jpg</image>
+                <image>images/shawshank.jpg</image>
 		<title>Saving Private Ryan</title>
 		<year>1998</year>
 		<category>Action</category>
