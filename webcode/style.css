@@ -161,3 +161,7 @@ footer {
 #contactoptions {
     list-style-type: none;
 }
+
+.underline {
+    width: 200px;
+}
