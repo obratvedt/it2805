@@ -81,7 +81,6 @@ nav ul li:hover {
 }
 
 #main {
-    height: 800px;
     width: 1000px;
     margin-top: 80px;
     margin-left: auto;
@@ -157,4 +156,8 @@ footer {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-color: #DCDCDC;
+}
+
+#contactoptions {
+    list-style-type: none;
 }
