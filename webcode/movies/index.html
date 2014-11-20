@@ -6,7 +6,7 @@
         <script src="movies.js"></script>
 	<title>Movies</title>
 	<meta charset = "UTF-8">
-        <script>
+        <script type="text/javascript">
             window.addEventListener("load", init);            
             var the_table;
              
@@ -17,13 +17,11 @@
                         
             function createTable() {
                 var x=getMovies();
-                        
-                var counter = 0;
                 var itemcounter = 0;
                         
                 for (t=0;t<x.length/4;t++) { 
                     var row = the_table.insertRow();
-                    var row2 = the_table.insertRow()
+                    var row2 = the_table.insertRow();
                     if (t < x.length/4-1)
                         row2.className = "not_last";
                     for (i=0;i<4;i++) {
@@ -32,11 +30,13 @@
                         var category = x[itemcounter].getElementsByTagName("category")[0].childNodes[0].nodeValue;
                         var cell = row.insertCell();
                         var cell2 = row2.insertCell();
-                        cell.innerHTML = "<img src='" + image + "' alt='Movie poster' />";
-                        cell2.innerHTML = "<a href=''>" + title + " (" + category + ")" + "</a>";
+                        var formName = "sendId"+itemcounter;
+                        //cell.innerHTML = "<form method='LINK' action='movie.html' id='"+formName+"'><input type='text' name='movieId' value='"+ itemcounter +"'></form><a onclick=\"document.getElementById('"+formName+"').submit();\"><img src='" + image + "' alt='Poster of " + title + "'/></a>";
+                        cell.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
+                        cell2.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'>" + title + " (" + category + ")</a>";
+                        console.log(itemcounter);
                         itemcounter++;
                     }    
-                        console.log(counter);
                 }
             }
         </script>        
@@ -63,9 +63,8 @@
                     <tr id="row4"></tr>
                 </tbody>
             </table>
+            <footer>Muvi is a web page for learning purposes only. Images and information about movies are all courtesy of IMDB.com</footer>
         </section>
-            
-        <footer></footer>
 	</body>
 
 </html>
