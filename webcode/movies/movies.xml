@@ -18,7 +18,7 @@
 	</movie>
 	<movie>
         <image>images/shawshank.jpg</image>
-        <file>movies/fightclub.wmv</file>
+        <file>movies/shawshankredemption.mp4</file>
 		<title>The Shawshank Redemption</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -31,7 +31,7 @@
 	</movie>
 	<movie>
 		<image>images/pulpfiction.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/pulpfiction.mp4</file>
 		<title>Pulp Fiction</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -45,7 +45,7 @@
 	</movie>
 	<movie>
 		<image>images/thegood.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/thegoodbadugly.mp4</file>
 		<title>The Good, the Bad and the Ugly</title>
 		<year>1966</year>
 		<category>Western</category>
@@ -58,7 +58,7 @@
 	</movie>
 	<movie>
 		<image>images/godfather.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/thegodfather.mp4</file>
 		<title>Godfather</title>
 		<year>1972</year>
 		<category>Drama</category>
@@ -70,7 +70,7 @@
 	</movie>
 	<movie>
 		<image>images/batman.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/batman.mp4</file>
 		<title>The Dark Knight</title>
 		<year>2008</year>
 		<category>Action</category>
@@ -84,7 +84,7 @@
 	</movie>
 	<movie>
 		<image>images/schindler.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/schindlerslist.mp4</file>
 		<title>Schindler's List</title>
 		<year>1993</year>
 		<category>Biography</category>
@@ -97,7 +97,7 @@
 	</movie>
 	<movie>
 		<image>images/lotrfellowship.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/lordoftherings.mp4</file>
 		<title>The Lord of the Rings: The Return of the King</title>
 		<year>2003</year>
 		<category>Adventure</category>
@@ -110,7 +110,7 @@
 	</movie>
 	<movie>
 		<image>images/starwarsv.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/starwars.mp4</file>
 		<title>Star Wars: Episode V - The Empire Strikes Back</title>
 		<year>1980</year>
 		<category>Action</category>
@@ -124,7 +124,7 @@
 	</movie>
 	<movie>
 		<image>images/inception.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/inception.mp4</file>
 		<title>Inception</title>
 		<year>2010</year>
 		<category>Action</category>
@@ -137,7 +137,7 @@
 	</movie>
 	<movie>
 		<image>images/forrestgump.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/forestgump.mp4</file>
 		<title>Forrest Gump</title>
 		<year>1994</year>
 		<category>Drama</category>
@@ -151,7 +151,7 @@
 	</movie>
 	<movie>
 		<image>images/matrix.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/matrix.mp4</file>
 		<title>The Matrix</title>
 		<year>1999</year>
 		<category>Action</category>
@@ -164,7 +164,7 @@
 	</movie>
 	<movie>
 		<image>images/cityofgod.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/cityofgod.mp4</file>
 		<title>City of God</title>
 		<year>2002</year>
 		<category>Drama</category>
@@ -177,7 +177,7 @@
 	</movie>
 	<movie>
 		<image>images/americanhistoryx.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/americanhistoryx.mp4</file>
 		<title>American History X</title>
 		<year>1998</year>
 		<category>Drama</category>
@@ -190,7 +190,7 @@
 	</movie>
 	<movie>
 		<image>images/psycho.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/psycho.mp4</file>
 		<title>Psycho</title>
 		<year>1960</year>
 		<category>Horror</category>
@@ -203,7 +203,7 @@
 	</movie>
 	<movie>
 		<image>images/savingprivateryan.jpg</image>
-		<file>movies/fightclub.wmv</file>
+		<file>movies/savingprivateryan.mp4</file>
 		<title>Saving Private Ryan</title>
 		<year>1998</year>
 		<category>Action</category>
