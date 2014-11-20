@@ -90,9 +90,7 @@ nav ul li:hover {
     border: solid;
     border-color: #FAFAFA;
     border-radius: 15px;
-    
-    box-shadow: 8px 8px 5px #888888;
-    //box-shadow: 0 5px 2px -2px darkgray;
+    box-shadow: 12px 0 8px -4px #DBDBDB, -12px 0 8px -4px #DBDBDB;
 }
 
 #main_movies {
@@ -105,8 +103,7 @@ nav ul li:hover {
     border: solid;
     border-color: #FAFAFA;
     border-radius: 15px;
-    
-    box-shadow: 8px 8px 5px #888888;
+    box-shadow: 12px 0 8px -4px #DBDBDB, -12px 0 8px -4px #DBDBDB;
 }
 
 #main_movies table tbody tr td {
@@ -146,4 +143,18 @@ nav ul li:hover {
 
 .not_last {
     border-bottom: 1px solid #A7A7A7;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #DCDCDC;
+    margin-top: 52px;
+    text-align: center;
+    font-size: 12px;
+    color: #5B90F6;
+    border-bottom: solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-color: #AAAAAA;
 }
