@@ -25,6 +25,23 @@ function displayMovie() {
 
     var text = idForm.value;
     console.log(splitLink(text));
+    
+    var i = splitLink(text);
+    
+    var movies = getMovies();
+    var image = movies[i].getElementsByTagName("image")[0].childNodes[0].nodeValue;
+    var title = movies[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    var year = movies[i].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+    var category = movies[i].getElementsByTagName("category")[0].childNodes[0].nodeValue;
+    var director = movies[i].getElementsByTagName("director")[0].childNodes[0].nodeValue;
+    var description = movies[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+    var trailer = movies[i].getElementsByTagName("trailer")[0].childNodes[0].nodeValue;
+    var rating = movies[i].getElementsByTagName("rating")[0].childNodes[0].nodeValue;
+    var views = movies[i].getElementsByTagName("views")[0].childNodes[0].nodeValue;
+    
+    var infoE = document.getElementById("movie_info");
+    infoE.innerHTML = "<h2>"+title+"</h2><img src='"+image+"'/>";
+                        
 }
 
 function splitLink(str) {

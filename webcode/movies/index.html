@@ -27,13 +27,13 @@
                     for (i=0;i<4;i++) {
                         var image = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
                         var title = x[itemcounter].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-                        var category = x[itemcounter].getElementsByTagName("category")[0].childNodes[0].nodeValue;
+                        var year = x[itemcounter].getElementsByTagName("year")[0].childNodes[0].nodeValue;
                         var cell = row.insertCell();
                         var cell2 = row2.insertCell();
-                        var formName = "sendId"+itemcounter;
+                        //var formName = "sendId"+itemcounter;
                         //cell.innerHTML = "<form method='LINK' action='movie.html' id='"+formName+"'><input type='text' name='movieId' value='"+ itemcounter +"'></form><a onclick=\"document.getElementById('"+formName+"').submit();\"><img src='" + image + "' alt='Poster of " + title + "'/></a>";
                         cell.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
-                        cell2.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'>" + title + " (" + category + ")</a>";
+                        cell2.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'>" + title + " (" + year + ")</a>";
                         console.log(itemcounter);
                         itemcounter++;
                     }    
@@ -46,7 +46,7 @@
         <nav id="navbar">
             <ul id="the-menu">
                 <li id="link1"><a href="../"><i class="fa fa-home"></i>Home</a></li>
-                <li id="link2" class="selected"><a href=""><i class="fa fa-film"></i>Movies</a></li>
+                <li id="link2" class="selected"><a href="index.html"><i class="fa fa-film"></i>Movies</a></li>
                 <li id="link3"><a href="../about/"><i class="fa fa-info-circle"></i>About</a></li>
                 <li id="link4"><a href="../faq/"><i class="fa fa-question-circle"></i>FAQ</a></li>
             </ul>
