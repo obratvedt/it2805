@@ -58,4 +58,9 @@ movie_info{
     background: linear-gradient(rgba(91,144,255,0.75), rgba(91,144,255,1)); /* Standard syntax */
 }
 
-
+#nav_links{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}

@@ -38,12 +38,13 @@ function displayMovie() {
     var views = movies[i].getElementsByTagName("views")[0].childNodes[0].nodeValue;
     
     var infoE = document.getElementById("movie_info");
+    var navLinks = "<div id='nav_links'><a href='index.html'>Movies</a> <i class='fa fa-long-arrow-right'></i>"+title+"</div>";
     var titleRow = "<tr><td colspan='2' class='no_indent'><h1>"+title+" ("+year+")</h1></td></tr>";
     var imageCol = "<tr><td rowspan='5' class='no_indent'><img src='"+image+"'/></td>";
     var textCol = "<td>Rating: <span class='bigText'>"+rating+"/6</span></td></tr><tr><td>Views: <span class='bigText'>"+views+"</span></td></tr>";
     var textCol2 = "<tr><td>Director: <span class='bigText'>"+director+"</span></td></tr><tr><td>Category: <span class='bigText'>"+category+"</span></td></tr>";
     var textCol3 = "<tr><td>Plot:<br><span class='bigText'>"+description+"</span></td></tr><tr><td colspan='2'><a id='rent_link' href='rent.html?movieId="+i+"'><div id='rent_button'><i class='fa fa-shopping-cart'></i> Rent '"+title+"'</div></a></td></tr>";
-    infoE.innerHTML = "<table id='movie_table'>"+titleRow+imageCol+textCol+textCol2+textCol3+"</table>";
+    infoE.innerHTML = "<table id='movie_table'>"+navLinks+titleRow+imageCol+textCol+textCol2+textCol3+"</table>";
     
     document.getElementById("movie_trailer").src = "http://www.youtube.com/embed/" + trailer;
                         
