@@ -189,3 +189,11 @@ footer {
 .underline {
     width: 200px;
 }
+
+#small_links {
+    font-size: 12px;
+}
+
+.small_link {
+    font-size: 12px;
+}
