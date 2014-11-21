@@ -20,13 +20,8 @@ function initMovie() {
 }
 
 function displayMovie() {
-    
     var movies = getMovies();
-    
-    var locate = window.location;
-    idForm.value = locate;
-    var text = idForm.value;    
-    var i = splitLink(text);
+    var i = getIdFromUrl();
     if(!(i % 1 === 0) || i >= movies.length){ // no, it's not an Integer
         window.location.assign("index.html");
         return;
@@ -59,3 +54,11 @@ function splitLink(str) {
     return(str.substring(theleft));
 }
 
+function getIdFromUrl(){
+   
+    
+    var locate = window.location;
+    idForm.value = locate;
+    var text = idForm.value;    
+    return splitLink(text);
+}
