@@ -73,6 +73,7 @@ nav ul li:hover {
     margin-bottom: 60px;
 }
 
+
 #main a {
     color:#5B90F6;
 }
@@ -114,6 +115,18 @@ nav ul li:hover {
     border-color: #FAFAFA;
     border-radius: 15px;
     box-shadow: 12px 0 8px -4px #DBDBDB, -12px 0 8px -4px #DBDBDB;
+}
+
+#main_movies p {
+    text-align: center;
+}
+
+#main_movies a {
+    color: #5B90F6;   
+}
+
+#main_movies a:hover {
+    color: #27408B;
 }
 
 #main_movies table tbody tr td {
