@@ -11,6 +11,10 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <script src="movies.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", init);
+        </script>     
     </head>
     <body>
         <header>Muvi</header>
@@ -32,8 +36,14 @@ and open the template in the editor.
             <p id="small_links"><a class="small_link" href="categories.html" >Western</a>   |   <a class="small_link" href="toprated.html">Drama</a>   |   <a class="small_link" href="mostviewed.html">Action</a>
                 |   <a class="small_link" href="mostviewed.html">Biography</a>   |   <a class="small_link" href="mostviewed.html">Adventure</a>   |   <a class="small_link" href="mostviewed.html">Horror</a></p>
             <table cellspacing="20">
+                
                 <tbody id="the_movies">
+                    <tr id="row1"></tr>
+                    <tr id="row2"></tr>
+                    <tr id="row3"></tr>
+                    <tr id="row4"></tr>
                 </tbody>
+                
             </table>
             <footer>Muvi is a web page for learning purposes only. Images and information about movies are all courtesy of IMDB.com</footer>
         </section>
