@@ -55,10 +55,40 @@ function splitLink(str) {
 }
 
 function getIdFromUrl(){
-   
-    
     var locate = window.location;
     idForm.value = locate;
     var text = idForm.value;    
     return splitLink(text);
+}
+
+var the_table;
+             
+function init() {
+    the_table = document.getElementById("the_movies");
+    createTable();
+}
+                        
+function createTable() {
+    var x=getMovies();
+    var itemcounter = 0;
+                        
+    for (t=0;t<x.length/4;t++) { 
+        var row = the_table.insertRow();
+        var row2 = the_table.insertRow();
+        if (t < x.length/4-1)
+            row2.className = "not_last";
+        for (i=0;i<4;i++) {
+            var image = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
+            var title = x[itemcounter].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            var year = x[itemcounter].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+            var cell = row.insertCell();
+            var cell2 = row2.insertCell();
+            //var formName = "sendId"+itemcounter;
+            //cell.innerHTML = "<form method='LINK' action='movie.html' id='"+formName+"'><input type='text' name='movieId' value='"+ itemcounter +"'></form><a onclick=\"document.getElementById('"+formName+"').submit();\"><img src='" + image + "' alt='Poster of " + title + "'/></a>";
+            cell.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
+            cell2.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'>" + title + " (" + year + ")</a>";
+            console.log(itemcounter);
+            itemcounter++;
+        }    
+    }
 }
