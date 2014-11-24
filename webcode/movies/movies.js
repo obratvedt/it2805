@@ -12,16 +12,13 @@ function getMovies(){
     return x;
 }
 
-var idForm;
-
 function initMovie() {
-    idForm = document.idContainer.id;
     displayMovie();
 }
 
 function displayMovie() {
     var movies = getMovies();
-    var i = getIdFromUrl();
+    var i = splitLink(window.location.href);
     if(!(i % 1 === 0) || i >= movies.length){ // no, it's not an Integer
         window.location.assign("index.html");
         return;
@@ -55,22 +52,14 @@ function splitLink(str) {
     return(str.substring(theleft));
 }
 
-function getIdFromUrl(){
-    var locate = window.location;
-    idForm.value = locate;
-    var text = idForm.value;    
-    return splitLink(text);
-}
-
 var the_table;
              
 function init() {
     the_table = document.getElementById("the_movies");
-    createTable();
+    createTable(getMovies());
 }
                         
-function createTable() {
-    var x=getMovies();
+function createTable(x) {
     var itemcounter = 0;
                         
     for (t=0;t<x.length/4;t++) { 
@@ -79,6 +68,8 @@ function createTable() {
         if (t < x.length/4-1)
             row2.className = "not_last";
         for (i=0;i<4;i++) {
+            if(i >= x.length)
+                return;
             var image = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
             var title = x[itemcounter].getElementsByTagName("title")[0].childNodes[0].nodeValue;
             var year = x[itemcounter].getElementsByTagName("year")[0].childNodes[0].nodeValue;
@@ -91,5 +82,28 @@ function createTable() {
             console.log(itemcounter);
             itemcounter++;
         }    
+    }
+}
+
+function initSearchPage() {
+    the_table = document.getElementById("the_movies");
+    var query = splitLink(window.location.href);
+    searchForTitle(query);
+}
+
+function searchForTitle(match) {
+    var movies = getMovies();
+    var hits = [];
+    match = match.replace("+"," ");
+    match = match.toLowerCase();
+    for(var i=0; i < movies.length; i++) {
+        var title = movies[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        if(title.toLowerCase().indexOf(match) != -1)
+            hits[hits.length] = movies[i];
+    }
+    if(hits.length > 0)
+        createTable(hits);
+    else {
+        the_table.innerHTML = "<h2>No results were found for '"+match+"'!</h2>";
     }
 }

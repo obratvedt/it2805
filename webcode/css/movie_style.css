@@ -64,3 +64,22 @@ movie_info{
     width: 50%;
     text-align: center;
 }
+
+#searchBox{
+    margin-left: auto;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+#searchBox form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    color: #5B90F6;
+}
+
+#searchBox form button{
+    color: #5B90F6;
+    padding-right: 10px;
+    padding-left: 10px;
+}
