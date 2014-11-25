@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Muvi - movies - mostviewed</title>
+        <title>Muvi - movies - latest</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../style.css">
@@ -19,10 +19,10 @@ and open the template in the editor.
             
             function init2 () {
                 tbody = document.getElementById("the_movies");
-                sortbyviews();
+                sortbyyear();
             }
             
-            function sortbyviews(str) {
+            function sortbyyear(str) {
                 
                 tbody.innerHTML = "";
                 
@@ -40,21 +40,20 @@ and open the template in the editor.
                     tempArr.push(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
                     tempArr.push(x[i].getElementsByTagName("year")[0].childNodes[0].nodeValue);
                     tempArr.push(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
-                    tempArr.push(x[i].getElementsByTagName("views")[0].childNodes[0].nodeValue);
 
                     movies.push(tempArr);  
                 }
                 
                 movies.sort(function (a,b) {
-                    if (parseInt(a[4]) > parseInt(b[4])) return -1;
-                    if (parseInt(a[4]) < parseInt(b[4])) return 1;
+                    if (parseInt(a[2]) > parseInt(b[2])) return -1;
+                    if (parseInt(a[2]) < parseInt(b[2])) return 1;
                     return 0;
                 });
                 
                 if (str === "ascending") {
                     movies.sort(function (a,b) {
-                    if (parseInt(a[4]) < parseInt(b[4])) return -1;
-                    if (parseInt(a[4]) > parseInt(b[4])) return 1;
+                    if (parseInt(a[2]) < parseInt(b[2])) return -1;
+                    if (parseInt(a[2]) > parseInt(b[2])) return 1;
                     return 0;
                 });
                     
@@ -62,8 +61,8 @@ and open the template in the editor.
                 
                 else {
                     movies.sort(function (a,b) {
-                    if (parseInt(a[4]) > parseInt(b[4])) return -1;
-                    if (parseInt(a[4]) < parseInt(b[4])) return 1;
+                    if (parseInt(a[2]) > parseInt(b[2])) return -1;
+                    if (parseInt(a[2]) < parseInt(b[2])) return 1;
                     return 0;
                 });
                 }
@@ -114,11 +113,9 @@ and open the template in the editor.
                             title = movies[itemcounter][1];
                             year = movies[itemcounter][2];
                             id = movies[itemcounter][3];
-                            views = movies[itemcounter][4];
                             
                             cell.innerHTML = "<a href='movie.html?movieId="+id+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
                             cell2.innerHTML = "<a href='movie.html?movieId="+id+"'>" + title + " (" + year + ")</a>";
-                            cell3.innerHTML = "<p>Views: " + views + "</p>";
                             
                         }
 
@@ -142,12 +139,12 @@ and open the template in the editor.
         </nav>
             
         <section id="main_movies">
-            <h1 id="movie_header">Most viewed</h1>
+            <h1 id="movie_header">Latest</h1>
             <p><a href="categories.html" >Categories</a>   |   <a href="toprated.html">Top rated</a>   |   <a href="mostviewed.html">Most viewed</a>   |   <a href="latest.html">Latest</a></p>
             
             
             <hr /> 
-            <p id="small_links"><a class="small_link" onclick="sortbyviews('ascending')" >Ascending</a>   |   <a class="small_link" onclick="sortbyviews('descending')">Descending</a></p>
+            <p id="small_links"><a class="small_link" onclick="sortbyyear('ascending')" >Ascending</a>   |   <a class="small_link" onclick="sortbyyear('descending')">Descending</a></p>
             <table cellspacing="20">
                 
                 <tbody id="the_movies">
