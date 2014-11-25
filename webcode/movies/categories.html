@@ -14,6 +14,80 @@ and open the template in the editor.
         <script src="movies.js"></script>
         <script type="text/javascript">
             window.addEventListener("load", init);
+            window.addEventListener("load", init2);
+            
+            var tbody;
+            
+            function init2 () {
+                tbody = document.getElementById("the_movies");
+            }
+            
+            function sortbycategory(str) {
+                
+                tbody.innerHTML = "";
+                
+                var itemcounter = 0;
+                
+                var x = getMovies();
+                
+                var movies = new Array();;
+                
+                for (i = 0; i < x.length; i++) {
+                    if (x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue === str) {
+                        var tempArr = new Array();
+                        tempArr.push(x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue);
+                        tempArr.push(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
+                        tempArr.push(x[i].getElementsByTagName("year")[0].childNodes[0].nodeValue);
+                        tempArr.push(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+                        
+                        movies.push(tempArr);
+                    }
+                    
+                }
+                
+                var numberOfRows = Math.floor(movies.length / 4) + 1;
+                
+                var itemcounter = 0;
+                
+                for (i = 0; i < numberOfRows; i++) {
+                    var row = tbody.insertRow();
+                    var row2 = tbody.insertRow();
+                    
+                    if (i !== numberOfRows - 1) {
+                        row2.className = "not_last";
+                    }
+                    
+                    for (t = 0; t < 4; t++) {
+                        
+                        
+                        
+                        var image;
+                        var title;
+                        var year;
+                        var id;
+                        
+                        if(itemcounter >= movies.length) {
+                        }
+                        
+                        else {
+                            
+                            var cell = row.insertCell();
+                            var cell2 = row2.insertCell();
+                            image = movies[itemcounter][0];
+                            title = movies[itemcounter][1];
+                            year = movies[itemcounter][2];
+                            id = movies[itemcounter][3];
+                            
+                            cell.innerHTML = "<a href='movie.html?movieId="+id+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
+                            cell2.innerHTML = "<a href='movie.html?movieId="+id+"'>" + title + " (" + year + ")</a>";
+                        }
+
+                        itemcounter++;
+                        
+                    }
+                }
+            }
+            
         </script>     
     </head>
     <body>
@@ -33,8 +107,8 @@ and open the template in the editor.
             
             
             <hr /> 
-            <p id="small_links"><a class="small_link" href="categories.html" >Western</a>   |   <a class="small_link" href="toprated.html">Drama</a>   |   <a class="small_link" href="mostviewed.html">Action</a>
-                |   <a class="small_link" href="mostviewed.html">Biography</a>   |   <a class="small_link" href="mostviewed.html">Adventure</a>   |   <a class="small_link" href="mostviewed.html">Horror</a></p>
+            <p id="small_links"><a class="small_link" onclick="sortbycategory('Western')" >Western</a>   |   <a class="small_link" onclick="sortbycategory('Drama')">Drama</a>   |   <a class="small_link" onclick="sortbycategory('Action')">Action</a>
+                |   <a class="small_link" onclick="sortbycategory('Biography')">Biography</a>   |   <a class="small_link" onclick="sortbycategory('Adventure')">Adventure</a>   |   <a class="small_link" onclick="sortbycategory('Horror')">Horror</a></p>
             <table cellspacing="20">
                 
                 <tbody id="the_movies">
@@ -45,7 +119,7 @@ and open the template in the editor.
                 </tbody>
                 
             </table>
-            <footer>Muvi is a web page for learning purposes only. Images and information about movies are all courtesy of IMDB.com</footer>
+            <footer>Muvi is a web page for learning purposes only. Images and information about movies are all courtesy of IMDB.com. Thanks to FontAwesome for icons.</footer>
         </section>
     </body>
 </html>
