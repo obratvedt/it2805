@@ -197,3 +197,8 @@ footer {
 .small_link {
     font-size: 12px;
 }
+
+.emptycell {
+    height: 317px;
+    width: 214px;
+}

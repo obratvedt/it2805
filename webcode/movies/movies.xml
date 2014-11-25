@@ -15,6 +15,7 @@
 		<trailer>SUXWAEX2jlg</trailer>
 		<rating>5</rating>
 		<views>598328</views>
+                <id>0</id>
 	</movie>
 	<movie>
         <image>images/shawshank.jpg</image>
@@ -28,6 +29,7 @@
 		<trailer>6hB3S9bIaco</trailer>
 		<rating>1</rating>
 		<views>753</views>
+                <id>1</id>
 	</movie>
 	<movie>
 		<image>images/pulpfiction.jpg</image>
@@ -42,6 +44,7 @@
 		 <trailer>wZBfmBvvotE</trailer>
 		 <rating>6</rating>
 		 <views>46746</views>
+                 <id>2</id>
 	</movie>
 	<movie>
 		<image>images/thegood.jpg</image>
@@ -55,6 +58,7 @@
 		<trailer>JdkSuurdbDA</trailer>
 		<rating>4</rating>
 		<views>3545432</views>
+                <id>3</id>
 	</movie>
 	<movie>
 		<image>images/godfather.jpg</image>
@@ -67,6 +71,7 @@
 		<trailer>sY1S34973zA</trailer>
 		<rating>4</rating>
 		<views>566895</views>
+                <id>4</id>
 	</movie>
 	<movie>
 		<image>images/batman.jpg</image>
@@ -81,6 +86,7 @@
 		<trailer>yQ5U8suTUw0</trailer>
 		<rating>6</rating>
 		<views>21354987</views>
+                <id>5</id>
 	</movie>
 	<movie>
 		<image>images/schindler.jpg</image>
@@ -94,6 +100,7 @@
 		<trailer>dwfIf1WMhgc</trailer>
 		<rating>5</rating>
 		<views>56732</views>
+                <id>6</id>
 	</movie>
 	<movie>
 		<image>images/lotrfellowship.jpg</image>
@@ -107,6 +114,7 @@
 		<trailer>V75dMMIW2B4</trailer>
 		<rating>5</rating>
 		<views>654654</views>
+                <id>7</id>
 	</movie>
 	<movie>
 		<image>images/starwarsv.jpg</image>
@@ -121,6 +129,7 @@
 		<trailer>PkEKIw0FU6Y</trailer>
 		<rating>4</rating>
 		<views>652654</views>
+                <id>8</id>
 	</movie>
 	<movie>
 		<image>images/inception.jpg</image>
@@ -134,6 +143,7 @@
 		<trailer>66TuSJo4dZM</trailer>
 		<rating>5</rating>
 		<views>546873</views>
+                <id>9</id>
 	</movie>
 	<movie>
 		<image>images/forrestgump.jpg</image>
@@ -148,6 +158,7 @@
 		<trailer>uPIEn0M8su0</trailer>
 		<rating>6</rating>
 		<views>9654632</views>
+                <id>10</id>
 	</movie>
 	<movie>
 		<image>images/matrix.jpg</image>
@@ -161,6 +172,7 @@
 		<trailer>m8e-FF8MsqU</trailer>
 		<rating>3</rating>
 		<views>2134521</views>
+                <id>11</id>
 	</movie>
 	<movie>
 		<image>images/cityofgod.jpg</image>
@@ -174,6 +186,7 @@
 		<trailer>ioUE_5wpg_E</trailer>
 		<rating>5</rating>
 		<views>65212456</views>
+                <id>12</id>
 	</movie>
 	<movie>
 		<image>images/americanhistoryx.jpg</image>
@@ -187,6 +200,7 @@
 		<trailer>UV0VEstvjMM</trailer>
 		<rating>1</rating>
 		<views>215462</views>
+                <id>13</id>
 	</movie>
 	<movie>
 		<image>images/psycho.jpg</image>
@@ -200,6 +214,7 @@
 		<trailer>NG3-GlvKPcg</trailer>
 		<rating>6</rating>
 		<views>6532</views>
+                <id>14</id>
 	</movie>
 	<movie>
 		<image>images/savingprivateryan.jpg</image>
@@ -213,6 +228,7 @@
 		<trailer>zwhP5b4tD6g</trailer>
 		<rating>2</rating>
 		<views>546321</views>
+                <id>15</id>
 	</movie>
 
 </movies>

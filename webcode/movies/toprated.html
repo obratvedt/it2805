@@ -6,23 +6,23 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Muvi - movies - categories</title>
+        <title>Muvi - movies - toprated</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <script src="movies.js"></script>
         <script type="text/javascript">
-            window.addEventListener("load", init);
             window.addEventListener("load", init2);
             
             var tbody;
             
             function init2 () {
                 tbody = document.getElementById("the_movies");
+                sortbyrating();
             }
             
-            function sortbycategory(str) {
+            function sortbyrating(str) {
                 
                 tbody.innerHTML = "";
                 
@@ -32,38 +32,64 @@ and open the template in the editor.
                 
                 var movies = new Array();
                 
+                
                 for (i = 0; i < x.length; i++) {
-                    if (x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue === str) {
-                        var tempArr = new Array();
-                        tempArr.push(x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue);
-                        tempArr.push(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
-                        tempArr.push(x[i].getElementsByTagName("year")[0].childNodes[0].nodeValue);
-                        tempArr.push(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
-                        
-                        movies.push(tempArr);
-                    }
+                    
+                    var tempArr = new Array();
+                    tempArr.push(x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue);
+                    tempArr.push(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
+                    tempArr.push(x[i].getElementsByTagName("year")[0].childNodes[0].nodeValue);
+                    tempArr.push(x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue);
+                    tempArr.push(x[i].getElementsByTagName("rating")[0].childNodes[0].nodeValue);
+
+                    movies.push(tempArr);  
+                }
+                
+                movies.sort(function (a,b) {
+                    if (a[4] > b[4]) return -1;
+                    if (a[4] < b[4]) return 1;
+                    return 0;
+                });
+                
+                if (str === "ascending") {
+                    movies.sort(function (a,b) {
+                    if (a[4] < b[4]) return -1;
+                    if (a[4] > b[4]) return 1;
+                    return 0;
+                });
                     
                 }
                 
+                else {
+                    movies.sort(function (a,b) {
+                    if (a[4] > b[4]) return -1;
+                    if (a[4] < b[4]) return 1;
+                    return 0;
+                });
+                }
+                
+                    
+
+                
                 var numberOfRows;
                 
-                if (movies.length % 4 === 0 ) {
-                    numberOfRows = movies.length / 4;
+                if (x.length % 4 === 0 ) {
+                    numberOfRows = x.length / 4;
                 }
                 
                 else {
-                    numberOfRows = Math.floor(movies.length / 4) + 1;
+                    numberOfRows = Math.floor(x.length / 4) + 1;
                 }
-                
                 
                 var itemcounter = 0;
                 
                 for (i = 0; i < numberOfRows; i++) {
                     var row = tbody.insertRow();
                     var row2 = tbody.insertRow();
+                    var row3 = tbody.insertRow();
                     
                     if (i !== numberOfRows - 1) {
-                        row2.className = "not_last";
+                        row3.className = "not_last";
                     }
                     
                     for (t = 0; t < 4; t++) {
@@ -74,6 +100,7 @@ and open the template in the editor.
                         var title;
                         var year;
                         var id;
+                        var rating;
                         
                         if(itemcounter >= movies.length) {
                         }
@@ -82,13 +109,17 @@ and open the template in the editor.
                             
                             var cell = row.insertCell();
                             var cell2 = row2.insertCell();
+                            var cell3 = row3.insertCell();
                             image = movies[itemcounter][0];
                             title = movies[itemcounter][1];
                             year = movies[itemcounter][2];
                             id = movies[itemcounter][3];
+                            rating = movies[itemcounter][4];
                             
                             cell.innerHTML = "<a href='movie.html?movieId="+id+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
                             cell2.innerHTML = "<a href='movie.html?movieId="+id+"'>" + title + " (" + year + ")</a>";
+                            cell3.innerHTML = "<p>Rating: " + rating + "</p>";
+                            
                         }
 
                         itemcounter++;
@@ -111,13 +142,12 @@ and open the template in the editor.
         </nav>
             
         <section id="main_movies">
-            <h1 id="movie_header">Categories</h1>
+            <h1 id="movie_header">Top rated</h1>
             <p><a href="categories.html" >Categories</a>   |   <a href="toprated.html">Top rated</a>   |   <a href="mostviewed.html">Most viewed</a></p>
             
             
             <hr /> 
-            <p id="small_links"><a class="small_link" onclick="sortbycategory('Western')" >Western</a>   |   <a class="small_link" onclick="sortbycategory('Drama')">Drama</a>   |   <a class="small_link" onclick="sortbycategory('Action')">Action</a>
-                |   <a class="small_link" onclick="sortbycategory('Biography')">Biography</a>   |   <a class="small_link" onclick="sortbycategory('Adventure')">Adventure</a>   |   <a class="small_link" onclick="sortbycategory('Horror')">Horror</a></p>
+            <p id="small_links"><a class="small_link" onclick="sortbyrating('ascending')" >Ascending</a>   |   <a class="small_link" onclick="sortbyrating('descending')">Descending</a></p>
             <table cellspacing="20">
                 
                 <tbody id="the_movies">

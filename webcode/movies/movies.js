@@ -73,12 +73,13 @@ function createTable(x) {
             var image = x[itemcounter].getElementsByTagName("image")[0].childNodes[0].nodeValue;
             var title = x[itemcounter].getElementsByTagName("title")[0].childNodes[0].nodeValue;
             var year = x[itemcounter].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+            var id = x[itemcounter].getElementsByTagName("id")[0].childNodes[0].nodeValue;
             var cell = row.insertCell();
             var cell2 = row2.insertCell();
             //var formName = "sendId"+itemcounter;
             //cell.innerHTML = "<form method='LINK' action='movie.html' id='"+formName+"'><input type='text' name='movieId' value='"+ itemcounter +"'></form><a onclick=\"document.getElementById('"+formName+"').submit();\"><img src='" + image + "' alt='Poster of " + title + "'/></a>";
-            cell.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
-            cell2.innerHTML = "<a href='movie.html?movieId="+itemcounter+"'>" + title + " (" + year + ")</a>";
+            cell.innerHTML = "<a href='movie.html?movieId="+id+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
+            cell2.innerHTML = "<a href='movie.html?movieId="+id+"'>" + title + " (" + year + ")</a>";
             console.log(itemcounter);
             itemcounter++;
         }    
