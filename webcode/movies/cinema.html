@@ -16,6 +16,10 @@
              
             function init() {
                 var i = splitLink(window.location.href);
+                if(!(i % 1 === 0) || i >= getMovies().length){ // no, it's not an Integer
+                    window.location.assign("index.html");
+                    return;
+                }
                 var video = document.getElementById("video");
                 var x=getMovies();
                 var movieLink = x[i].getElementsByTagName("file")[0].childNodes[0].nodeValue;

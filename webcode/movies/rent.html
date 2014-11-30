@@ -13,6 +13,14 @@
         var i;
         window.onload = function(){
                 i = splitLink(window.location.href);
+                var x = getMovies();
+                if(!(i % 1 === 0) || i >= x.length){ // no, it's not an Integer
+                    window.location.assign("index.html");
+                    return;
+                }
+                var title = document.getElementById("title")
+                var movieTitle = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                title.innerHTML = "Rent "+movieTitle;
                 
             }
         function goToCinema(){
@@ -37,12 +45,19 @@
         </nav>
         
         <section id="main">
-            
+            <p id="title"></p>
                 <form name="rentform" onSubmit="return goToCinema()">
                    <p>Name: <input type="text" name="name" required="required" size="30" maxlength="100" /></p>
                    <p>Email: <input type="email" name="email" required="required" size="30" maxlength="100"/></p>
                    <p>Phone: <input type="tel" name="phone" size="30" maxLength="100"/></p>
-                   <input type="submit" name="submit" align="center" />
+
+                   <input type="radio" name="payment" value="visa" required>Visa
+                    <input type="radio" name="payment" value="paypal">PayPal
+                    </br>
+                    </br>
+                    </br>
+                   <input value="Rent" type="submit" name="submit" align="center" width="30" />
+
                 </form> 
             <footer>Muvi is a web page for learning purposes only. Images and information about movies are all courtesy of IMDB.com. Thanks to FontAwesome for icons.</footer>
             
