@@ -76,11 +76,8 @@ function createTable(x) {
             var id = x[itemcounter].getElementsByTagName("id")[0].childNodes[0].nodeValue;
             var cell = row.insertCell();
             var cell2 = row2.insertCell();
-            //var formName = "sendId"+itemcounter;
-            //cell.innerHTML = "<form method='LINK' action='movie.html' id='"+formName+"'><input type='text' name='movieId' value='"+ itemcounter +"'></form><a onclick=\"document.getElementById('"+formName+"').submit();\"><img src='" + image + "' alt='Poster of " + title + "'/></a>";
             cell.innerHTML = "<a href='movie.html?movieId="+id+"'><img src='" + image + "' alt='Poster of " + title + "'/></a>";
             cell2.innerHTML = "<a href='movie.html?movieId="+id+"'>" + title + " (" + year + ")</a>";
-            console.log(itemcounter);
             itemcounter++;
         }    
     }
